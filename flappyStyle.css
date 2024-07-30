@@ -1,0 +1,94 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    background-image: url(flappyBirdBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bird {
+    height: 90px;
+    width: 110px;
+    position: fixed;
+    top: 40vh;
+    left: 30vw;
+    z-index: 100;
+}
+
+.pipe_sprite {
+    position: fixed;
+    top: 40vh;
+    left: 100vw;
+    height: 70vh;
+    width: 6vw;
+    background-color: chartreuse;
+    border: 5px solid black;
+}
+
+.message {
+    position: absolute;
+    z-index: 10;
+    color: black;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    font-size: 2em;
+    transform: translate(-50%, -50%);
+}
+
+.h2 {
+    color: red;
+}
+
+.messageStyle {
+    background: white;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0, 24) 0px 3px 8px;
+    border-radius: 5%;
+}
+
+.score {
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 5vh;
+    font-weight: 100;
+    color: white;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.score_val {
+    color: gold;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1080px) {
+    .message {
+        font-size: 50px;
+        top: 50%;
+        white-space: nowrap;
+    }
+
+    .score {
+        font-size: 8vh;
+    }
+
+    .bird {
+        width: 90px;
+        height: 70px;
+    }
+
+    .pipe {
+        width: 14vw;
+    }
+}
